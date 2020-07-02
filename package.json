@@ -34,7 +34,7 @@
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build"
   },
-  "proxy": "http://localhost:8080/",
+  "proxy": "http://localhost:8005/",
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -49,5 +49,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "3": "^2.1.0",
+    "-": "0.0.1",
+    "jquery": "^1.9.1",
+    "typescript": "^3.9.6"
   }
 }

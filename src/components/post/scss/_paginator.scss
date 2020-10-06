@@ -1,0 +1,36 @@
+.paginator{
+    padding: 15px 1px 5px;
+    margin-left: auto !important;
+    position: unset;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.MuiPaginationItem-page.Mui-selected {
+    background-color:#FEDBD0 !important;
+}
+
+.MuiPagination-ul {
+    width: 345px !important;
+    margin: 0 auto !important;
+}
+
+.MuiPaginationItem-root {
+    color: var(--dark-brown) !important;
+    height: 32px;
+    margin: 0 3px;
+    padding: 0 6px;
+    font-size: 1.1rem;
+    min-width: 32px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    border-radius: 16px;
+    letter-spacing: 0.01071em;
+}
+
+

@@ -1,0 +1,151 @@
+.ReactModal__Overlay--after-open {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: papayawhip;
+}
+
+.ReactModal__Content--after-open {
+    position: fixed;
+    top: calc(10vh - 0px);
+    left: calc(25vw - 0px);
+    right: calc(15vw - 0px);
+    bottom: 40px;
+    border: 1px solid rgba(204, 204, 204, 0);
+    background: var(--light-pink);
+    overflow: auto;
+    overflow-x: hidden;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+    color: black;
+    border-width: 1px;
+    border-color: var(--dark-brown);
+    border-radius: 5px;
+    box-shadow: 0 3px 9px var(--dark-brown);
+}
+
+.MuiFormLabel-root.Mui-focused {
+    color: var(--dark-brown) !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+    border-color: var(--dark-brown) !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: var(--dark-brown) !important;
+}
+
+.MuiInputBase-root {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    background-color: transparent;
+}
+
+.MuiButton-containedPrimary {
+    color: var(--dark-brown) !important;
+    background-color: var(--light-pink) !important;
+    border: 1px solid var(--dark-brown) !important;
+}
+
+.MuiAlert-outlinedInfo {
+    color: var(--dark-brown) !important;
+    border: 1px solid var(--dark-brown) !important;
+}
+
+.MuiAlert-outlinedError {
+    color: var(--dark-brown) !important;
+    border: 1px solid var(--dark-brown) !important;
+}
+
+.MuiSvgIcon-fontSizeInherit {
+    color: var(--dark-brown) !important;
+}
+
+.MuiFormHelperText-root {
+    color: red !important;
+    font-weight: 500 !important;
+}
+.MuiFormControl-root {
+    background-color: #ffffff00 !important;
+}
+
+.MuiAlert-root {
+    display: flex;
+    padding: 0px 13px !important;
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    border-radius: 4px;
+    letter-spacing: 0.01071em;
+    background-color: transparent;
+}
+
+.preview-section {
+    border-radius: 5px;
+}
+
+.picture-preview {
+    float: left;
+    padding: 0 0px 0px 0;
+    vertical-align: top;
+    width: 20%;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.inner-preview-section {
+    padding: 5px 6px 5px 5px;
+    display: inline-block;
+    border: 1px solid var(--dark-brown);
+    border-radius: 5px;
+    width: 100%;
+    color: var(--dark-brown);
+}
+
+.picture-name-title {
+    font-weight: 500;
+}
+
+.card-img-top {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.picture-name {
+    padding: 0 0 0 170px;
+}
+
+.card-body-modal{
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.preview-section {
+    display: inline-block;
+    width: 100% !important;
+}
+
+.display-file-not-selected {
+    width: 100%;
+}
+
+.section-position {
+    padding: 5px 5px 5px 5px;
+}
+
+.close-submit-form-buttons {
+    padding-top: 15px;
+}
+
+.se-component.se-image-container.__se__float-none > figure > img {
+    width: 100% !important;
+    height: 100% !important;
+}

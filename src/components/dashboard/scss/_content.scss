@@ -1,0 +1,73 @@
+.container-fluid .container-responsive-graphs {
+    border: 1px solid var(--dark-brown);
+    border-radius: 5px;
+    -webkit-box-shadow: 6px 2px 20px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 2px 20px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 2px 20px -8px rgba(0, 0, 0, 0.75);
+}
+
+.container-fluid .container-responsive-graphs .makeStyles-root-1 h3 {
+    padding: 1rem 0rem 0rem 1rem;
+    border-bottom: 0.1rem solid;
+    width: fit-content;
+}
+.container-pie-chart {
+    height: 350px;
+    width: max-content;
+    display: block;
+    border: 1px solid var(--dark-brown);
+    border-radius: 5px;
+    -webkit-box-shadow: 6px 2px 20px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 2px 20px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 2px 20px -8px rgba(0, 0, 0, 0.75);
+}
+
+.container-fluid .container-pie-chart > h3 {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-bottom: 0.2rem solid;
+}
+
+.responsive-Line {
+    height: 500px;
+    overflow: hidden;
+}
+
+.responsive-Line text {
+    font-weight: 600;
+    fill: var(--dark-brown) !important;
+}
+
+
+.container-geo-network-choropleth{
+    height: 500px;
+    border: 0.1rem solid;
+}
+
+.MuiTab-textColorPrimary.Mui-selected {
+    color: var(--dark-brown) !important;
+    font-weight: 700 !important;
+}
+
+.MuiTab-textColorPrimary.Mui-selected {
+    color: var(--dark-brown) !important;
+}
+
+.PrivateTabIndicator-colorPrimary-3 {
+    background-color: var(--dark-brown) !important;
+}
+
+.PrivateTabIndicator-colorPrimary-4 {
+    background-color: var(--dark-brown) !important;
+}
+
+.MuiBox-root {
+    padding: 0rem 0rem 0rem 0rem !important;
+}
+
+.MuiGrid-grid-xs-true {
+    max-width: 75% !important;
+}
+
+.MuiGrid-grid-xs-3 {
+    max-width: fit-content !important;
+}

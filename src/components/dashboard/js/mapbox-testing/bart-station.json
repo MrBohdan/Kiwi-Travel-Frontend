@@ -1,0 +1,22 @@
+[
+  {
+    "name": "User",
+    "continent": "Europe",
+    "subContinent": "Eastern Europe",
+    "country": "Ukraine",
+    "region": "Mykolaiv Oblast",
+    "city": "Mykolaiv",
+    "coordinates": [
+      31.9946,
+      46.9750
+    
+    ]
+  },
+  {
+    "name": "12th St. Oakland City Center (12TH)",
+    "coordinates": [
+      31.9946,
+      46.9750
+    ]
+  }
+]

@@ -1,0 +1,67 @@
+.wrapper-footer-container {
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+.wrapper-footer-container > * {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    line-height: 2;
+}
+
+.wrapper-footer-container svg {
+    vertical-align: baseline;
+}
+
+.wrapper-footer-container .display-maps-container {
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.wrapper-footer-container .display-maps-container iframe{
+    border-radius: 1rem;
+    min-width: 40vw;
+    min-height: 45vh;
+}
+
+
+// container with numbers and address
+.wrapper-footer-container .container-contacts {
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+// container with links to networks
+.wrapper-footer-container .social-networks {
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.wrapper-footer-container .social-networks  svg {
+    width: 50px;
+    height: 50px;
+}
+
+
+.wrapper-footer-container .container-contacts ul {
+    list-style: none;
+    padding: 0rem 0rem 0rem 1rem;
+}
+
+.wrapper-footer-container a {
+    color: #fff;
+}
+
+
+.wrapper-footer-container a:hover  {
+    color: #fff;
+}

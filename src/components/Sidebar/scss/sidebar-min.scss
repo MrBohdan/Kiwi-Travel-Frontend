@@ -1,0 +1,83 @@
+  /* setting for the main block for small resolutions*/
+  @media all and(max-width: 1040px) {
+    .sidebar .nav-link{
+      bottom: 0px;
+      font-style: normal;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: 500;
+      color: #442C2E !important;
+    }
+    .px-md-4 {
+      padding-top: 1rem;
+  }
+  }
+  
+  /* setting for the main block for small resolutions*/
+  @media all and(max-width: 991px) {
+    .nav {
+      align-items: center;
+  }
+  .sticky-top {
+    height: 2rem;
+    top: 0px;
+    position: sticky;
+    }
+    .px-md-4 {
+      padding-top: 1rem;
+  }
+    .sidebar .nav-link{
+      bottom: 0px;
+      font-style: normal;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #442C2E !important;
+    }
+    .sidebar-sticky {
+      top: 0;
+      background-color: #FEEAE6;
+      position: relative;
+      height: calc(100vh - 0px);
+      padding-top: .5rem;
+      overflow-x: hidden;
+      overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    }
+    .px-md-4 {
+      padding-top: 1rem;
+  }
+  }
+
+/* setting for the main block for mobile*/
+@media all and (max-width: 767px) {
+    .nav {
+      align-items: center;
+  }
+  .sticky-top {
+    height: 5rem;
+    top: 0px;
+    }
+    .px-md-4 {
+      padding-top: 2.3rem !important;
+  }
+    .sidebar .nav-link{
+      bottom: 0px;
+      font-style: normal;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #442C2E !important;
+      justify-content: stretch
+    }
+    .sidebar-sticky {
+      top: 0;
+      background-color: #FEEAE6;
+      position: relative;
+      height: calc(100vh - 0px);
+      padding-top: .5rem;
+      overflow-x: hidden;
+      overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    }
+    .px-md-4 {
+      padding-top: 0.3rem !important;
+  }
+}

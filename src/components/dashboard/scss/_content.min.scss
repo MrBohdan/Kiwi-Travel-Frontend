@@ -1,0 +1,27 @@
+@media all and (max-width: 1450px) {
+    .MuiGrid-grid-xs-true {
+        max-width: 100% !important;
+    }
+}
+
+@media all and (max-width: 991px) {
+}
+
+@media all and (max-width: 765px) {
+    .container-pie-chart {
+        width: 100%;
+    }
+
+    .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+        padding: 4px !important;
+    }
+
+    .MuiBox-root {
+        padding: 0px !important;
+        max-width: 100% !important;
+        flex-basis: 100% !important;
+    }
+}
+
+@media all and (max-width: 568px) {
+}

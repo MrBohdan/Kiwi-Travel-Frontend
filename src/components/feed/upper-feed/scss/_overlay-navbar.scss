@@ -1,0 +1,57 @@
+.container-UpperFeed .container-overlay .header .nav-bar > ::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(-3.5rem - 1px);
+    left: calc(50% - 1px);
+    width: 1px;
+    height: calc(3.5rem + 1px);
+    background: #fff;
+}
+
+
+// setup navbar list
+.container-UpperFeed .container-overlay .header nav ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 1px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: #0000003d;
+}
+
+.container-UpperFeed .container-overlay .header nav ul li:first-child {
+    border-left: 0;
+}
+
+.container-UpperFeed .container-overlay .header nav ul li {
+    padding-left: 0;
+    border-left: 1px solid #fff;
+}
+
+.container-UpperFeed .container-overlay .header nav ul li a {
+    display: block;
+    min-width: 7.5rem;
+    height: 2.75rem;
+    line-height: 2.75rem;
+    padding: 0 1.25rem 0 1.45rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    border-bottom: 0;
+    color: #fff;
+}
+
+.container-UpperFeed .container-overlay .header a {
+    -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; /* Safari */
+    -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; /* Old versions of Firefox */
+    -ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; /* Internet Explorer/Edge */
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,17 @@
+.loading-bar{
+    padding: 15px 1px 5px;
+    margin-left: auto !important;
+    position: unset;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+}
+.loading-bar-position{
+    width: 50px; 
+    margin: 0 auto;
+}
+
+.loading-circular-progress{
+    color: var(--dark-brown) !important;
+}

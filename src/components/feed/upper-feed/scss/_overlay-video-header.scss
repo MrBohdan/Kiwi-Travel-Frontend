@@ -1,0 +1,144 @@
+.container-UpperFeed .container-overlay {
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    min-height: 85vh;
+    padding: 4rem 2rem;
+    z-index: 999;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.container-UpperFeed .container-overlay .header {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out,
+        opacity 0.325s ease-in-out;
+    -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+    -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+    transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+    // background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
+    // background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
+    // background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
+    // background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
+    max-width: 100%;
+    text-align: center;
+}
+
+.container-UpperFeed .container-overlay .header .container-content {
+    border-style: solid;
+    border-color: #fff;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    max-width: 70%;
+    max-height: 40rem;
+    padding: 2rem 2rem;
+    margin-top: 1rem;
+    overflow: hidden;
+    -webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+    -moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+    -ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+    transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+    -webkit-transition-delay: 0.25s;
+    -moz-transition-delay: 0.25s;
+    -ms-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+}
+
+.container-overlay .header div.container-content {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.container-UpperFeed .container-overlay .header .container-logo {
+    display: contents;
+}
+
+.container-UpperFeed .container-overlay .header > :first-child {
+    margin-top: 0;
+}
+
+.container-UpperFeed .container-overlay .header > * {
+    -webkit-transition: opacity 0.325s ease-in-out;
+    -moz-transition: opacity 0.325s ease-in-out;
+    -ms-transition: opacity 0.325s ease-in-out;
+    transition: opacity 0.325s ease-in-out;
+    position: relative;
+    margin-top: 3.6rem;
+}
+
+/*
+ * logo
+ */
+.container-UpperFeed .container-overlay .header .container-logo .logo-img {
+    width: 100%;
+    height: 13.75rem;
+    max-width: 100%;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: fill;
+}
+
+/*
+ * greeting text
+ */
+ .container-UpperFeed .container-overlay .header .container-content  p{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.9rem;
+    line-height: 2;
+    color: white;
+    font-weight: 600;
+}
+
+/*
+ * disable 'user-select' for the text
+ */
+.container-UpperFeed .container-overlay .header .container-content .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+*,
+:after,
+:before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}

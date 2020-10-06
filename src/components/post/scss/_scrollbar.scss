@@ -1,0 +1,22 @@
+/* width */
+.ReactModal__Content--after-open::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .ReactModal__Content--after-open::-webkit-scrollbar-track {
+    background:var(--light-pink); 
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  .ReactModal__Content--after-open::-webkit-scrollbar-thumb {
+    background: var(--dark-brown); 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  .ReactModal__Content--after-openF::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-brown); 
+    border-radius: 5px;
+  }

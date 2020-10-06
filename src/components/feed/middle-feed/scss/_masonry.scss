@@ -1,0 +1,28 @@
+.container-MiddleFeed .container-post {
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.container-MiddleFeed .container-post .posts-section {
+    -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; /* Safari */
+    -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; /* Old versions of Firefox */
+    -ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; /* Internet Explorer/Edge */
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.container-MiddleFeed .container-post .posts-section .masonry-post {
+    padding-bottom: 1rem;
+}
+
+.masonry-post .card {
+    -webkit-box-shadow: 6px 2px 20px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 2px 20px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 2px 20px -8px rgba(0, 0, 0, 0.75);
+}
+
+.masonry-post .card .card-img-top {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}

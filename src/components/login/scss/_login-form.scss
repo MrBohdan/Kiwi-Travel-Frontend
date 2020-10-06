@@ -1,0 +1,91 @@
+.form-background {
+    background-color: #eee;
+    height: 100vh;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    padding-top: 10vh;
+    position: absolute;
+}
+.MuiFormLabel-root.Mui-focused {
+    color: var(--dark-brown) !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+    border-color: var(--dark-brown) !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: var(--dark-brown) !important;
+}
+
+.MuiInputBase-root {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    background-color: transparent;
+}
+
+.MuiFormLabel-root {
+    color: var(--dark-brown);
+    font-weight: 500 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+.main {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.form-background .container-main .form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: var(--light-pink);
+    border: 1px solid var(--dark-brown);
+    border-radius: 5px;
+}
+
+.form-background .container-main .form-signin .container-logo .logo-img-login {
+    padding: 0rem 0rem 75% 0rem;
+    max-width: 100%;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-background .container-main .form-signin .container-username {
+    padding: 0px 0px 15px 0px;
+}
+
+.form-background .container-main .form-signin .container-password {
+    padding: 0px 0px 15px 0px;
+}
+
+.MuiFormControl-root {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.MuiButton-containedPrimary {
+    color: var(--dark-brown) !important;
+    background-color: var(--light-pink) !important;
+    border: 1px solid var(--dark-brown) !important;
+}
+.PrivateNotchedOutline-root-1 {
+    border-color: var(--dark-brown) !important;
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: var(--dark-brown) !important;
+}
+.form-background .container-main .form-signin .container-button .signin-button {
+    width: 100%;
+    height: 3rem;
+}

@@ -1,0 +1,138 @@
+@media all and (max-width: 1150px) {
+}
+
+@media all and (max-width: 991px) {
+    .container-UpperFeed .container-overlay .header .container-content {
+        max-width: 80%;
+    }
+}
+
+@media all and (max-width: 765px) {
+    .container-UpperFeed .container-overlay .header .container-content {
+        max-width: 100%;
+        padding: 2rem 0rem;
+    }
+
+    // apply margin for all elements under header
+    .container-UpperFeed .container-overlay .header > * {
+        margin-top: 2.6rem;
+    }
+
+    .container-UpperFeed .container-overlay .header .nav-bar > ::before {
+        top: calc(-2.5rem - 1px);
+        height: calc(2.5rem + 1px);
+    }
+
+    .container-UpperFeed .container-overlay .header nav ul {
+        -moz-flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 10rem;
+        max-width: 100%;
+    }
+
+    .container-UpperFeed .container-overlay .header nav ul li:first-child {
+        border-top: 0;
+    }
+
+    .container-UpperFeed .container-overlay .header nav ul li {
+        border-left: 0px solid #fff;
+        border-top: 1px solid #fff;
+    }
+}
+
+@media all and (max-width: 568px) {
+    .container-UpperFeed {
+        height: calc(100vh / 1.2);
+    }
+
+    .container-UpperFeed .container-overlay {
+        padding: 2rem 1rem;
+    }
+
+    .container-UpperFeed .container-overlay .header > .container-logo .logo-img {
+        height: 10.75rem;
+    }
+
+    .container-UpperFeed .container-overlay .header .container-content {
+        max-width: 100%;
+        padding: 1rem 0rem;
+    }
+
+    .container-UpperFeed .container-overlay .header > * {
+        margin-top: 2.6rem;
+    }
+
+    .container-UpperFeed .container-overlay .header .nav-bar > ::before {
+        top: calc(-2.5rem - 1px);
+        height: calc(2.5rem + 1px);
+    }
+
+    .container-UpperFeed .container-overlay .header nav ul {
+        -moz-flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 10rem;
+        max-width: 100%;
+    }
+
+    .container-UpperFeed .container-overlay .header nav ul li:first-child {
+        border-top: 0;
+    }
+
+    .container-UpperFeed .container-overlay .header .container-content p {
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+
+    .container-UpperFeed .container-overlay .header nav ul li {
+        border-left: 0px solid #fff;
+        border-top: 1px solid #fff;
+    }
+}
+
+@media all and (max-width: 340px) {
+    .container-UpperFeed .container-overlay .header > .container-logo .logo-img {
+        height: 8.75rem;
+    }
+
+    .container-UpperFeed .container-overlay {
+        padding: 2rem 0rem;
+    }
+
+    .container-UpperFeed .container-overlay .header .container-content {
+        max-width: 90%;
+        padding: 0rem 0rem;
+    }
+
+    .container-UpperFeed .container-overlay .header .container-content p {
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-size: 0.8rem;
+        line-height: 2;
+    }
+
+    .container-UpperFeed .container-overlay .header .nav-bar > ::before {
+        top: calc(-2.5rem - 1px);
+        height: calc(7.5rem + 1px);
+    }
+
+    .container-UpperFeed .container-overlay .header nav ul {
+        display: table-cell;
+        min-width: 9rem;
+    }
+    .container-UpperFeed .container-overlay .header nav ul li a {
+        height: 3rem;
+        line-height: 3rem;
+        min-width: 0;
+        width: 100%;
+    }
+
+    .container-UpperFeed .container-overlay .header > * {
+        margin-top: 2.6rem;
+    }
+}

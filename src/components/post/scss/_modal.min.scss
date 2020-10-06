@@ -1,0 +1,67 @@
+@media all and (max-width: 1150px) {
+    .picture-name {
+        padding: 0 0 0 180px;
+    }
+
+    .ReactModal__Content--after-open {
+        position: fixed;
+        top: calc(8vh - 0px);
+        left: calc(18vw - 0px);
+        right: calc(1vw - 0px);
+        bottom: calc(10vw - 0px);
+    }
+}
+
+@media all and (max-width: 991px) {
+    .ReactModal__Overlay--after-open {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: var(--light-pink);
+    }
+
+    .picture-name {
+        padding: 0 0 0 120px;
+    }
+
+    .ReactModal__Content--after-open {
+        position: fixed;
+        top: calc(14vh - 0px);
+        left: calc(27vw - 0px);
+        right: calc(1vw - 0px);
+        bottom: calc(10vw - 0px);
+        border: 1px solid rgba(204, 204, 204, 0);
+        background: var(--light-pink);
+        overflow: auto;
+        overflow-x: hidden;
+        border-radius: 4px;
+        outline: none;
+        padding: 20px;
+        color: var(--dark-brown);
+        border-width: 1px;
+        border-color: var(--dark-brown) !important;
+    }
+}
+
+@media all and (max-width: 765px) {
+    .picture-name {
+        padding: 0 10px 0 70px;
+    }
+
+    .ReactModal__Content--after-open {
+        position: fixed !important;
+        top: 5rem !important;
+        left: calc(0vw - 0px) !important;
+        right: calc(0vw - 0px) !important;
+        bottom: calc(0vw - 0px) !important;
+        border: 0px !important;
+        padding-top: calc(4vh - 0px) !important;
+        border-width: 0px !important;
+    }
+
+    .card-body-modal {
+        padding: 1rem 0rem 0rem 0rem;
+    }
+}

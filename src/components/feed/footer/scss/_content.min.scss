@@ -1,0 +1,62 @@
+@media all and (max-width: 1150px) {
+    .wrapper-footer-container {
+        padding: 1rem 0rem 1rem 0rem;
+    }
+
+    .wrapper-footer-container .display-maps-container iframe {
+        min-width: 45vw;
+        min-height: 25vh;
+    }
+
+    // container with links to networks
+    .wrapper-footer-container .social-networks {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .wrapper-footer-container {
+        padding: 1rem 0rem 1rem 0rem;
+    }
+
+    .wrapper-footer-container .display-maps-container iframe {
+        min-width: 100%;
+        min-height: 25vh;
+    }
+
+    .wrapper-footer-container .container-contacts {
+        padding: 1rem 0rem 1rem 0rem;
+    }
+}
+
+@media all and (max-width: 765px) {
+    .wrapper-footer-container {
+        display: flow-root;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .display-maps-container iframe {
+        min-width: 100%;
+        min-height: 25vh;
+    }
+}
+
+@media all and (max-width: 568px) {
+    .wrapper-footer-container {
+        display: flow-root;
+        padding: 1rem 0rem 1rem 0rem;
+    }
+
+    .wrapper-footer-container .display-maps-container iframe {
+        max-width: 100%;
+        min-height: 57vh;
+    }
+
+    .wrapper-footer-container .container-contacts {
+        padding: 1rem 1rem 0rem 1rem;
+    }
+
+    .wrapper-footer-container .social-networks {
+        padding: 0rem 1rem 1rem 1rem;
+    }
+}

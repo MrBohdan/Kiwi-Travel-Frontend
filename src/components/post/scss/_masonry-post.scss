@@ -1,0 +1,52 @@
+.masonry{
+        display: grid;
+        grid-gap: .7rem;
+    } 
+
+    .MuiIconButton-root {
+      color: var(--dark-brown) !important;
+  }
+  
+  /* setting for the main block for small resolutions*/
+@media all and(max-width: 991px) {
+ .masonry{
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .masonry-post{
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        padding-top: .7rem;
+    }
+  }
+
+.masonry-post{
+      position: relative;
+      border-radius: 5px;
+      overflow: hidden;
+  }
+
+
+  /* setting for the main block for small resolutions*/
+  @media all and(max-width: 1040px) {
+    .masonry{
+           display: flex;
+           flex-direction: column;
+       } 
+   
+       .masonry-post{
+           position: relative;
+           border-radius: 5px;
+           overflow: hidden;
+           padding-top: .7rem;
+       }
+     }
+   
+   .masonry-post{
+         position: relative;
+         border-radius: 5px;
+         overflow: hidden;
+     }
+   

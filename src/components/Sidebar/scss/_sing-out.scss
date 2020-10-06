@@ -1,0 +1,39 @@
+.sign-out{
+  font-weight: 600 !important;
+  margin: 0;
+}
+
+.nav-item-sign-out{
+  width: 150px;
+  margin: 0 auto;
+}
+
+.border-top{
+  border-top: 1px solid #442C2E !important;
+}
+
+.sign-out-section{
+  position: fixed;
+  bottom: 0;
+  width: 15%;
+}
+/* setting for the main block for mobile*/
+@media all and (max-width: 765px) {
+
+  .sign-out-section {
+    position: inherit !important;
+    width: auto !important;
+}
+}
+
+ /* setting for the main block for small resolutions*/
+ @media all and(max-width: 991px) {
+ 
+  .nav-item-sign-out{
+    width: 160px !important;
+  }
+  .sign-out-section {
+    position: inherit !important;
+    width: auto !important;
+}
+}

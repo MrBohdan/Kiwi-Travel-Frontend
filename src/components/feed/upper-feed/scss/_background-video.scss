@@ -1,0 +1,60 @@
+.container-UpperFeed .container-overlay .video-background {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -99;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* Safari */
+    -moz-background-size: cover; /* Old versions of Firefox */
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86); /* Safari */
+    -moz-transition: -moz-transform 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86); /* Old versions of Firefox */
+    transition: transform 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.4) 0%,
+            rgba(0, 0, 0, 0.35) 0%,
+            rgba(0, 0, 0, 0.1) 60%,
+            transparent 100%
+        );
+        background: -webkit-linear-gradient(
+            bottom,
+            rgba(0, 0, 0, 0.4) 0%,
+            rgba(0, 0, 0, 0.35) 0%,
+            rgba(0, 0, 0, 0.1) 60%,
+            transparent 100%
+        );
+    }
+}
+
+.container-UpperFeed .container-overlay .video-background .video-container {
+    display: -moz-inline-box;
+    display: -webkit-inline-box;
+    display: inline-block;
+    background-repeat: no-repeat;
+    -moz-background-size: cover; /* Safari */
+    -webkit-background-size: cover; /* Old versions of Firefox */
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    visibility: inherit;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}

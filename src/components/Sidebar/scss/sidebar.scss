@@ -1,0 +1,78 @@
+
+/*
+ * Sidebar
+ */
+ .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 43px 0 0; /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  }
+  
+  .sidebar-sticky {
+    top: -1px;
+    background-color: #FEEAE6;
+    position: relative;
+    height: calc(100vh - 0px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+
+  /*
+  * sidebar font settings
+  */
+  .sidebar .nav-link {
+    bottom: 0px;
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #442C2E !important;
+  }
+  
+  .sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #999;
+  }
+  
+  .sidebar .nav-link.active {
+    color: #442C2E;
+  }
+  
+  .sidebar .nav-link:hover .feather,
+  .sidebar .nav-link.active .feather {
+    color: inherit;
+  }
+
+  
+/* icons in a table */
+.sidebar i{
+    padding-right: .75rem;
+  }
+  /* setting for the '<i>' text in the sidebar table*/
+  .flex-column i{
+    vertical-align: text-bottom;
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid #442C2E!important;
+}
+
+  @media (max-width: 767.98px) {
+    .sidebar {
+      top: 1rem;
+    }
+  }
+
+  @supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sidebar-sticky {
+      position: -webkit-sticky;
+      position: sticky;
+    }
+  }
+
+  

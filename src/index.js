@@ -1,24 +1,27 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
-import {
-    UpperFeed,
-    MiddleFeed,
-    FooterContainer
-} from './components/feed/index';
 import * as serviceWorker from './serviceWorker';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// import HorizontalSidebar from './components/Sidebar/js/HorizontalSidebar';
+import {
+    UpperFeed,
+    MiddleFeed,
+    FooterContainer
+} from './components/feed/index';
+
+import HorizontalSidebar from './components/Sidebar/js/HorizontalSidebar';
 const Index = () => {
     return (
-        <div className="container-body">
-            {/* <HorizontalSidebar /> */}
-            <UpperFeed />
-            <MiddleFeed />
-            <FooterContainer />
-        </div>
+        <Suspense fallback={<div>Loading...</div>}>
+            <div className="container-body">
+                <HorizontalSidebar />
+                {/* <UpperFeed />
+                <MiddleFeed />
+                <FooterContainer /> */}
+            </div>
+        </Suspense>
     );
 }
 ReactDOM.render(<Index

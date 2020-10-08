@@ -11,6 +11,8 @@ module.exports = {
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, '../src/main/resources/static/built/'),
+        chunkFilename: 'chunks/[name].[chunkhash].chunk.js',
+        publicPath: "/built/"
     },
     cache: true,
     mode: 'development',

@@ -46,7 +46,7 @@ const LoginPage = () => {
                     <div className="container-logo">
                         <div className="logo-img-login" style={{
                             backgroundImage: `url(${LogoImage})`,
-                            }} />
+                        }} />
                     </div>
                     <h2 className="form-signin-heading noselect">Please sign in</h2>
                     <div className="container-username">
@@ -74,9 +74,9 @@ const LoginPage = () => {
                         />
                     </div>
                     <div className="container-button">
-                        <Button className="signin-button btn btn-lg btn-primary btn-block" type="submit" variant="contained" color="primary">
-                            login
-                      </Button>
+                        <Button className="signin-button btn" variant="contained" color="primary" type="submit" variant="contained" color="primary">
+                            <span className="btn-post-font"> login</span>
+                        </Button>
                     </div>
                 </form>
             </div >

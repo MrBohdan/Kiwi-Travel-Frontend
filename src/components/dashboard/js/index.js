@@ -1,3 +1,4 @@
+import { lazy } from 'react';
 // metrics
 import SessionsByDevicePie from './metrics/sessions-By-Device-Pie-Chart';
 import AudienceOverviewResponsiveLine from './metrics/audience-Overview-Responsive-Line';
@@ -21,11 +22,11 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
-// Components
-import ResponsiveGraphs from './responsive-graphs/responsive-graphs';
-import MapsCharts from './responsive-graphs/maps-charts';
 // Airbnb - react-dates
 import { DateRangePicker } from 'react-dates';
+// Components
+const ResponsiveGraphs = lazy(() => import('./responsive-graphs/responsive-graphs'));
+const MapsCharts = lazy(() => import('./responsive-graphs/maps-charts'));
 
 export {
     // metrics

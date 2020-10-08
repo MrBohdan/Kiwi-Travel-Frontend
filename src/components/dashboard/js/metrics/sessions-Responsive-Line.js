@@ -24,7 +24,13 @@ const SessionsResponsiveLine = ({ data }) => (
         data={data}
         margin={{ top: 20, right: 55, bottom: 45, left: 60 }}
         xScale={{ type: 'point' }}
-        yScale={{ type: 'linear', min: 'auto', max: 'auto', stacked: false, reverse: false, }}
+        yScale={{
+            type: 'linear',
+            min: 'auto',
+            max: 'auto',
+            stacked: false,
+            reverse: false,
+        }}
         curve="monotoneX"
         enablePointLabel={true}
         axisTop={null}

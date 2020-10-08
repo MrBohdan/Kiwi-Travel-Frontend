@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, lazy, Suspense } from 'react';
 import {
     BsHouseDoor,
     BsPencilSquare,
@@ -7,8 +7,6 @@ import {
     FaDoorOpen,
 } from 'react-icons/fa';
 import { IconContext } from "react-icons";
-import Post from '../../post/js/Post';
-import Dashboard from '../../dashboard/js/Dashboard';
 import {
     BrowserRouter as Router,
     Switch,
@@ -18,6 +16,9 @@ import { Provider } from 'react-redux';
 import store from '../../../store'
 
 import '../scss/_home.scss';
+
+const Post = lazy(() => import('../../post/js/Post'));
+const Dashboard = lazy(() => import('../../dashboard/js/Dashboard'));
 
 class HorizontalSidebar extends Component {
     render() {
@@ -69,14 +70,16 @@ class HorizontalSidebar extends Component {
                                     </div>
                                 </nav>
                                 {/* define router */}
-                                <Switch>
-                                    <Route path="/dashboard">
-                                        <Dashboard />
-                                    </Route>
-                                    <Route path="/posts">
-                                        <Post />
-                                    </Route>
-                                </Switch>
+                                <Suspense fallback={<div>Loading...</div>}>
+                                    <Switch>
+                                        <Route path="/dashboard">
+                                            <Dashboard />
+                                        </Route>
+                                        <Route path="/posts">
+                                            <Post />
+                                        </Route>
+                                    </Switch>
+                                </Suspense>
                             </div>
                         </div>
                     </Router>

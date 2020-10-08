@@ -11,13 +11,13 @@ const FetchSessionDuration = (setSessionDuration) => {
             // console.log("metrics : ", rows.metrics[0].values[0]);
             data.push({
                 x: moment(rows.dimensions[0]).format('ll'),
-                y: new Date((rows.metrics[0].values[1]) * 1000).toISOString().substr(11, 8)
+                y: new Date((rows.metrics[0].values[0]) * 1000).toISOString().substr(11, 8)
             })
-            // console.log(new Date((rows.metrics[0].values[1]) * 1000).toISOString().substr(11, 8));
+            // console.log(new Date((rows.metrics[0].values[0]) * 1000).toISOString().substr(11, 8));
         });
 
         setSessionDuration(lineSessionDurationDataChart => [...lineSessionDurationDataChart, {
-            id: "Session-Duration",
+            id: "Ave. Sessions-Duration",
             data: data,
         }]);
 

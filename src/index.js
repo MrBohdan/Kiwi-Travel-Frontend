@@ -5,11 +5,11 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import {
-    UpperFeed,
-    MiddleFeed,
-    FooterContainer
-} from './components/feed/index';
+// import {
+//     UpperFeed,
+//     MiddleFeed,
+//     FooterContainer
+// } from './components/feed/index';
 
 import HorizontalSidebar from './components/Sidebar/js/HorizontalSidebar';
 const Index = () => {

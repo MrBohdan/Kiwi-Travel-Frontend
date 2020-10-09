@@ -2,14 +2,21 @@ import axios from 'axios';
 
 const getCountryISO3 = require("country-iso-2-to-3");
 
-const FetchGeoNetwork = (setGeoNetwork) => {
+const FetchGeoNetwork = (metrix, setMetrix) => {
+    var data = [];
     axios.get(`api/v1.0/analytics/get/GeoNetwork`).then(response => {
         response.data.reports[0].data.rows.map((rows, index) => {
-            setGeoNetwork(pieChartData => [...pieChartData, {
+            data.push({
                 id: getCountryISO3(rows.dimensions[5]),
                 value: parseInt(rows.metrics[0].values[0])
-            }]);
+            })
         });
+
+        setMetrix(metrix => ({
+            ...metrix,
+            geoNetwork: data
+        }));
+
     }).catch((error) => {
         if (error.response) {
             // The request was made and the server responded with a status code

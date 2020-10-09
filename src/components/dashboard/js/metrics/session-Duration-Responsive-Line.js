@@ -1,6 +1,5 @@
 import React from 'react';
 import { ResponsiveLine } from '@nivo/line'
-import moment from 'moment';
 
 const CustomSymbol = ({ size, color, borderWidth, borderColor }) => (
     <g>

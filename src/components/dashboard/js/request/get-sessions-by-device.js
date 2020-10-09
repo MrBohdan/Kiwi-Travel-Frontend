@@ -1,17 +1,22 @@
 import axios from 'axios';
 
-const FetchSessionsByDevice = (setSessionsByDevice) => {
+const FetchSessionsByDevice = (metrix, setMetrix) => {
     axios.get(`api/v1.0/analytics/get/SessionsByDevice`).then(response => {
+        var data = []
         response.data.reports[0].data.rows.map((rows, index) => {
             // console.log("id : ", rows.dimensions[0]);
             // console.log("label : ", rows.dimensions[0]);
             // console.log("value : ", rows.metrics[0].values[0]);
-            setSessionsByDevice(pieChartData => [...pieChartData, {
+            data.push({
                 id: rows.dimensions[0],
                 label: rows.dimensions[0],
                 value: parseInt(rows.metrics[0].values[0])
-            }]);
+            })
         });
+        setMetrix(metrix => ({
+            ...metrix,
+            sessionsByDevice: data
+        }));
     }).catch((error) => {
         if (error.response) {
             // The request was made and the server responded with a status code

@@ -4,6 +4,8 @@ import {
     AudienceOverviewResponsiveLine,
     SessionsResponsiveLine,
     SessionDurationResponsiveLine,
+    // Components
+    DateRangePickerAirbnb,
     // material-ui
     PropTypes,
     SwipeableViews,
@@ -61,9 +63,9 @@ const useStyles = makeStyles((theme) => ({
 
 const ResponsiveGraphs = ({
     naming,
-    audienceOverview,
-    sessions,
-    sessionDuration
+    metrix,
+    dateRange,
+    setDateRange
 }) => {
     const [value, setValue] = useState(0);
     const classes = useStyles();
@@ -101,22 +103,25 @@ const ResponsiveGraphs = ({
                 >
                     <TabPanel value={value} index={0} dir={theme.direction}>
                         <div className="responsive-Line">
-                            <AudienceOverviewResponsiveLine data={audienceOverview} />
+                            <AudienceOverviewResponsiveLine data={metrix.audienceOverview} />
                         </div>
                     </TabPanel>
                     <TabPanel value={value} index={1} dir={theme.direction}>
                         <div className="responsive-Line">
-                            <SessionsResponsiveLine data={sessions} />
+                            <SessionsResponsiveLine data={metrix.sessions} />
                         </div>
                     </TabPanel>
                     <TabPanel value={value} index={2} dir={theme.direction}>
                         <div className="responsive-Line">
-                            <SessionDurationResponsiveLine data={sessionDuration} />
+                            <SessionDurationResponsiveLine data={metrix.sessionDuration} />
                         </div>
                     </TabPanel>
                 </SwipeableViews>
             </div>
-            <hr />
+            <DateRangePickerAirbnb
+                dateRange={dateRange}
+                setDateRange={setDateRange}
+            />
         </div>
     )
 };

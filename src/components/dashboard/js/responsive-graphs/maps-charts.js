@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const MapsCharts = ({ naming, geoNetwork }) => {
+const MapsCharts = ({ naming, metrix }) => {
     const [value, setValue] = useState(0);
     const classes = useStyles();
     const theme = useTheme();
@@ -94,7 +94,7 @@ const MapsCharts = ({ naming, geoNetwork }) => {
                 >
                     <TabPanel value={value} index={0} dir={theme.direction}>
                         <div className="container-geo-network-choropleth">
-                            <GeoNetworkChoropleth data={geoNetwork} />
+                            <GeoNetworkChoropleth data={metrix.geoNetwork} />
                         </div>
                     </TabPanel>
                     <TabPanel value={value} index={1} dir={theme.direction}>

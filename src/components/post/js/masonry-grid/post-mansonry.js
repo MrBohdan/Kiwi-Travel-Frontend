@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     MasonryPost
-} from './';
+} from '../index';
 
 export default function PostMansonry({ postsArray, columns, handleChanges, modalProps }) {
     return (

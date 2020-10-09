@@ -22,11 +22,15 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
+// indicators
+import CircularloadingIndicator from '../../indicator/js/circular-loading-indicator';
 // Airbnb - react-dates
 import { DateRangePicker } from 'react-dates';
 // Components
+import DateRangePickerAirbnb from '../js/date-range-picker/date-range-picker'
 const ResponsiveGraphs = lazy(() => import('./responsive-graphs/responsive-graphs'));
 const MapsCharts = lazy(() => import('./responsive-graphs/maps-charts'));
+
 
 export {
     // metrics
@@ -54,8 +58,11 @@ export {
     Box,
     Grid,
     // Components
+    DateRangePickerAirbnb,
     ResponsiveGraphs,
     MapsCharts,
+    // indicators
+    CircularloadingIndicator,
     // Airbnb - react-dates
     DateRangePicker,
 }

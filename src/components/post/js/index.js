@@ -1,5 +1,5 @@
-import PostMansonry from './post-mansonry';
-import MasonryPost from './masonry-post';
+import PostMansonry from './masonry-grid/post-mansonry';
+import MasonryPost from './masonry-grid/masonry-post';
 import DisplayPosts from './display-posts';
 // modal imports
 import CreatePostModal from './modal/create-post-modal';
@@ -13,8 +13,8 @@ import PostsPostUtil from './requests/post-post-util';
 import PutPostUtil from './requests/put-post-util';
 import GetAuthorizedStaffID from './requests/get-authorized-staff-id'
 // indicators
-import CircularloadingIndicator from './indicator/circular-loading-indicator';
-import ServerErrorIndicator from './indicator/server-error-indicator';
+import CircularloadingIndicator from '../../indicator/js/circular-loading-indicator';
+import ServerErrorIndicator from '../../indicator/js/server-error-indicator';
 // convert
 import ConvertBlob from '../js/convert/convert-blob-to-file';
 // rich text editor

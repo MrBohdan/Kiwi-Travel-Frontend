@@ -1,7 +1,7 @@
 import axios from 'axios';
 import moment from 'moment';
 
-const FetchSessions = (setSessions) => {
+const FetchSessions = (metrix, setMetrix) => {
     axios.get(`api/v1.0/analytics/get/Sessions`).then(response => {
         var data = [];
         response.data.reports[0].data.rows.map((rows, index) => {
@@ -13,10 +13,14 @@ const FetchSessions = (setSessions) => {
             })
         });
 
-        setSessions(lineSessionsDataChart => [...lineSessionsDataChart, {
-            id: "Sessions",
-            data: data,
-        }]);
+        setMetrix(metrix => ({
+            ...metrix,
+            sessions: [{
+                id: "Sessions",
+                data: data,
+            }]
+        }));
+        
     }).catch((error) => {
         if (error.response) {
             // The request was made and the server responded with a status code

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import moment from 'moment';
 
-const FetchSessionDuration = (setSessionDuration) => {
+const FetchSessionDuration = (metrix, setMetrix) => {
     axios.get(`api/v1.0/analytics/get/SessionDuration`).then(response => {
         // console.log("response : ", response.data.reports[0].data.rows);
 
@@ -16,10 +16,13 @@ const FetchSessionDuration = (setSessionDuration) => {
             // console.log(new Date((rows.metrics[0].values[0]) * 1000).toISOString().substr(11, 8));
         });
 
-        setSessionDuration(lineSessionDurationDataChart => [...lineSessionDurationDataChart, {
-            id: "Ave. Sessions-Duration",
-            data: data,
-        }]);
+        setMetrix(metrix => ({
+            ...metrix,
+            sessionDuration: [{
+                id: "Ave. Sessions-Duration",
+                data: data,
+            }]
+        }));
 
     }).catch((error) => {
         if (error.response) {

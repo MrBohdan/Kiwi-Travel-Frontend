@@ -9,13 +9,13 @@ import { useDispatch } from "react-redux";
 import {
     getPostsByID,
     deletePosts
-} from '../../actions/postAction';
+} from '../../../actions/postAction';
 import {
     FIND_POST,
     EDIT_POSTS
-} from '../../actions/types';
-import moment from 'moment';
+} from '../../../actions/types';
 
+import moment from 'moment';
 import 'moment/locale/ru'
 import 'moment/locale/uk'
 import 'moment/locale/en-gb'

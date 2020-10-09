@@ -1,7 +1,7 @@
 import axios from 'axios';
 import moment from 'moment';
 
-const FetchAudienceOverview = (setAudienceOverview) => {
+const FetchAudienceOverview = (metrix, setMetrix) => {
     axios.get(`api/v1.0/analytics/get/AudienceOverview`).then(response => {
         // console.log("response : ", response.data.reports[0].data.rows);
 
@@ -15,10 +15,13 @@ const FetchAudienceOverview = (setAudienceOverview) => {
             })
         });
 
-        setAudienceOverview(lineAudienceOverviewDataChart => [...lineAudienceOverviewDataChart, {
-            id: "Users",
-            data: data,
-        }]);
+        setMetrix(metrix => ({
+            ...metrix,
+            audienceOverview: [{
+                id: "Users",
+                data: data,
+            }]
+        }));
 
     }).catch((error) => {
         if (error.response) {
